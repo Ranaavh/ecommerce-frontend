@@ -1,0 +1,104 @@
+/* Login.css */
+
+.container-login {
+  min-height: 100vh;
+}
+
+.form-col {
+  width: 70%;
+}
+.form-label {
+  font-weight: 600;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.login-heading {
+  text-align: center;
+}
+
+.login-button {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: none;
+  padding: 12px;
+  background-color: var(--primary-color);
+}
+.login-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.breadcrumb-link:hover {
+  color: var(--hover-color);
+}
+
+/* Style for form controls */
+.form-control {
+  border: 0.5px solid #cac9c9;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+.create-button {
+  width: 50%;
+  padding: 12px;
+  border: none;
+  background-color: var(--secondary-color);
+}
+
+.create-button:hover {
+  width: 50%;
+  padding: 12px;
+  border: none;
+  background-color: var(--primary-color);
+}
+.forgot-button {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid white;
+  color: var(--secondary-color);
+  background-color: white;
+  transition: border-color 0.3s;
+}
+.forgot-button:hover {
+  color: var(--secondary-color);
+  background-color: rgb(255, 255, 255);
+  border-color: var(--secondary-color);
+}
+
+/* Media Queries for tablets and mobiles */
+@media (max-width: 768px) {
+  .form-col {
+    width: 90%;
+  }
+
+  .footer-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Reduced gap between buttons */
+  }
+
+  .create-button,
+  .forgot-button {
+    width: 100%; /* Make buttons full width */
+  }
+  .create-button:hover {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: var(--primary-color);
+  }
+}
